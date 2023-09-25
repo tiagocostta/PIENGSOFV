@@ -29,7 +29,18 @@ public class Usuario {
       @Temporal(TemporalType.DATE)
       private Date dataCadastro;
      
-      public int getId() {
+      @Column(name="data_nascimento")
+      private Date dataNascimento;
+      
+      public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public int getId() {
 		return id;
       }
 	
