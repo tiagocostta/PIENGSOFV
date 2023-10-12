@@ -7,7 +7,7 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-	<h:head><title>Criacao de usuario</title></h:head>
+	<h:head><title>Cadastro de usuario</title></h:head>
 	
 	<h:body>
 		<h:form id="form">
@@ -32,10 +32,9 @@
 					
 					
 						<p:outputLabel for="senha" value="Senha: "/>
-						<p:password id="senha" value="#{usuarioBean.usuario.senha}"  />					
-					
-					
-               			 <p:outputLabel id="dataCadastro" value="#{usuarioBean.usuario.dataCadastro}" />					
+						<p:password id="senha" value="#{usuarioBean.usuario.senha}"  />	
+               			
+               			<p:outputLabel id="dataCadastro" value="#{usuarioBean.usuario.dataCadastro}" />					
 					
 					
 						<p:commandButton value="Salvar" action="#{usuarioBean.salvar}" update="form" styleClass="ui-button-secondary"/>

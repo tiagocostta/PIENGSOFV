@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 //Classe para criar objetos do tipo EntityManager
 public class JPAUtil {
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("vitimaPU");
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("LojaPU");
 	
 	//método estático para criar uma instância da fábrica de EntityManager
 	public static EntityManager criarEntityManager() {

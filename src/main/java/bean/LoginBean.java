@@ -29,7 +29,7 @@ public class LoginBean implements Serializable{
 		
 		if (usuario != null) {
 			
-			return "/listagem_incidente";
+			return "/listagem_usuario";
 			
 		} else {
 			usuario = new Usuario();
